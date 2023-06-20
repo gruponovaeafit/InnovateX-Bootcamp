@@ -22,7 +22,7 @@ El objetivo es que contribuyas añadiendo tu rama personalizada, de esta forma p
 
 2. Accede a la carpeta `Summer-2023`.
 
-        cd Summer-2023/
+        cd InnovateX-Bootcamp/Summer-2023/
 
 3. Por defecto, **no está permitido realizar push a la branch `main` del repositorio**, por ello es necesario crear tu propia rama para agregarla al repositorio y compartir tu trabajo. 
 
