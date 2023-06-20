@@ -1,0 +1,14 @@
+Documentación HTML y CSS
+https://developer.mozilla.org/en-US/
+
+CSS Diner - Juego para practicar selectores
+https://flukeout.github.io/
+
+CSS Reset
+https://cdnjs.com/libraries/meyer-reset
+
+Calculadora de especificidad CSS
+https://specificity.keegan.st/
+
+Gráfico para ver la especificidad de tu código CSS
+https://jonassebastianohlsson.com/specificity-graph/
