@@ -18,27 +18,29 @@ El objetivo es que contribuyas añadiendo tu rama personalizada, de esta forma p
 
 1. Clona el repositorio.
 
-    git clone git@github.com:gruponovaeafit/InnovateX-Bootcamp.git
+        git clone git@github.com:gruponovaeafit/InnovateX-Bootcamp.git
 
 2. Accede a la carpeta `Summer-2023`.
 
-    cd Summer-2023/
+        cd Summer-2023/
 
-3. Por defecto, **no está permitido realizar push a la branch `main` del repositorio**, por ello es necesario crear tu propia rama para agregarla al repositorio y compartir tu trabajo. El nombre del modulo es la clase en la que estas trabajando. Ver [Documentación](#documentación). El `username` es el username de GitHub. Si no se siguen estás convenciones, los administradores del repositorio eliminarán tu rama.
+3. Por defecto, **no está permitido realizar push a la branch `main` del repositorio**, por ello es necesario crear tu propia rama para agregarla al repositorio y compartir tu trabajo. 
 
-    git checkout -b <feature/nombre-modulo__username>
+    El nombre del modulo, es la clase en la que estas trabajando. Ver [Documentación](#documentación). El `username` es el username de GitHub. Si no se siguen estás convenciones, los administradores del repositorio eliminarán la rama.
 
-Ejemplo:
+        git checkout -b <feature/nombre-modulo__username>
 
-    git checkout -b feature/html-css__alejoriosm04
+    Ejemplo:
+
+        git checkout -b feature/html-css__alejoriosm04
 
 4. Ahora que has creado tu rama, siempre que quieras realizar un `push` al repositorio remoto.
 
-    git push origin <nombre-rama-creada>
+        git push origin <nombre-rama-creada>
 
 5. Si deseas traer los cambios de la rama principal, ten en cuenta que este comando puede traer conflictos en las historias.
 
-    git pull origin main
+        git pull origin main
 
 
 # Contribuir
