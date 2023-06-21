@@ -1,0 +1,13 @@
+.container {
+    color: yellowgreen;
+    background-color: #000;
+    padding: 10px;
+}
+
+p:first-of-type {
+    color: #a50b0b;
+}
+
+p {
+    color: #fff;
+}
