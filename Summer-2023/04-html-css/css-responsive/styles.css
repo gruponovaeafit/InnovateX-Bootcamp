@@ -1,6 +1,17 @@
-article {
+
+.container {
     color: #9370DB;
-    font-size: 7px;
-    border: 5px solid #85C1E9;
+
 }
-h1 
+p:first-of-type{
+    color: #212F3D;
+}
+.aa{
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 100px 100px;
+    padding: 100px;
+    background: linear-gradient( #85C1E9,#EC7063);
+}
+

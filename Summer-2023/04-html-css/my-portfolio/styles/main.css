@@ -1,0 +1,40 @@
+body{
+    background-color: var(--main-backgrount-color);
+    color: azure;
+    font-family: arial;
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.about-me {
+
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+}
+.about-me__info{
+    max-width: 50rem;
+
+}
+.about-me-info__name{
+    font-size: 3rem;
+}
+.about-me-info__description{
+    padding: 2rem 0;
+}
+.about-info__button{
+    border: 2px solid  var(--main-blue-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--main-backgrount-color);
+}
+
