@@ -1,8 +1,29 @@
+section article {
+    color: green;
+}
 article {
-    color: yellowgreen;
-    font-size: 20px;
-    border: 5px solid black;
+    color: purple;
 }
-h2, p {
-    border: 5px solid black;
+p:first-of-type {
+    color: red;
 }
+
+p {
+    color: blue;
+}
+
+.div {
+    border: 20px solid black;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: 100px;
+    padding: 100px;
+    display: inline-block;
+}
+
+h1 {
+    display: inline;
+    width: 50px;
+}
+
