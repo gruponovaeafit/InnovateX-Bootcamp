@@ -1,0 +1,23 @@
+body{
+    background-color: #10101a;
+    color: #fff;
+}
+
+img {
+    width: 200px;
+}
+
+.about-me-info__name{
+    font-size: 3rem;
+}
+
+.about-me-info{
+    max-width: 50rem;
+}
+
+.about-me{
+    display: flex;
+    max-width:  80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
