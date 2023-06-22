@@ -1,5 +1,22 @@
-article {
-    color: #312f2f;
-    font-size: 20px;
+.pito{
     border: 5px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height:  100px;
+    margin: 100px;
+    padding: 100px;
+    background: linear-gradient(#7F00FF,#66FFFF,#A0A0A0,#000033);
 }
+
+
+.contenedor{
+    color: magenta;
+}
+
+
+
+p {
+    color:brown;
+}
+ 
+
