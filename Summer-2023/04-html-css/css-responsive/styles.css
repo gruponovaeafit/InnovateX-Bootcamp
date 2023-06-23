@@ -1,5 +1,16 @@
-article {
+.container {
     color: #312f2f;
     font-size: 20px;
-    border: 5px solid black;
+    
+}
+p:first-of-type {
+    color : #4b8383;
+}
+
+.div {
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 100px 100px;
+    background: linear-gradient(#312f2f, #4b8383, #aac);
 }
