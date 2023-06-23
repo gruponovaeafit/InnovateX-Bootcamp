@@ -1,0 +1,106 @@
+body {
+  background-color: var(--main-background-color);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100vw;
+  gap: 3rem;
+}
+
+.about-me-info_description {
+  padding: 2rem 0;
+}
+
+.about-me {
+  display: flex;
+  max-width: 80vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.about-me-info {
+  max-width: 54rem;
+}
+.about-me-info_name {
+  font-size: 5rem;
+  color: aliceblue;
+}
+
+.about-me-info_button {
+  border: 2px solid var(--main-green-color);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: var(--main-background-color);
+  color: white;
+}
+
+.about-me-info_button i {
+  color: white;
+  font-size: 10rem;
+}
+
+.skills-section {
+  max-width: 60vw;
+  background-color: #014047;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+div {
+  background-color: var(--main-background-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.projects-section img {
+  width: 400px;
+  border-radius: 50px;
+}
+.projects-section h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.projects-section-microsoft {
+  background-color: #d0ff94;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  grid-column: 1/3;
+}
+.projects-section-microsoft_button {
+  background-color: #d0ff94;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.projects-section-nike {
+  background-color: #cbe5ff;
+}
+.projects-section-oakley {
+  background-color: #4b56d2;
+}
+
+/*# sourceMappingURL=styles.css.map */
