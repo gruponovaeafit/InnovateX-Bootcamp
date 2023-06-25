@@ -165,6 +165,7 @@ article svg {
 }
 .projects-section-microsoft h3 {
   font-size: 8vw;
+  padding: 3vw 0;
 }
 .projects-section-microsoft__button {
   font-size: 3vw;
@@ -196,6 +197,7 @@ article svg {
 }
 .projects-section-nike h3, .projects-section-oakley h3 {
   font-size: 5vw;
+  padding: 2vw 0;
 }
 .projects-section-nike__button, .projects-section-oakley__button {
   font-size: 2vw;
@@ -217,7 +219,7 @@ article svg {
 .contact-section__text {
   padding: 1rem 10vw;
   font-size: 1.3rem;
-  background-image: url(../assets/img/rejillaFondo5.png);
+  background-image: url(../assets/img/rejillaFondo2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -322,7 +324,7 @@ article svg {
     background-image: unset;
   }
   .projects-section {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr 0.5fr;
   }
   .projects-section h3 {
     font-size: 3rem;
