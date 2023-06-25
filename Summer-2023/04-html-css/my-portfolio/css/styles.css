@@ -17,10 +17,20 @@ body {
 
 h2 {
   text-align: center;
+  font-size: 3.5rem;
+  font-family: "vcr";
 }
 
-header {
-  margin-top: 2rem;
+button {
+  cursor: pointer;
+}
+
+button svg {
+  vertical-align: middle;
+}
+
+article svg {
+  padding: 0.5rem;
 }
 
 .container {
@@ -28,7 +38,7 @@ header {
   flex-direction: column;
   gap: 3rem;
   max-width: 100vw;
-  padding: 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .nav {
@@ -44,11 +54,12 @@ header {
 .nav a {
   color: #a8e00a;
 }
-.nav img:first-child {
+.nav__logo {
   width: 200px;
 }
-.nav img:last-child {
+.nav__menu-icon {
   width: 50px;
+  vertical-align: middle;
 }
 
 .about-me {
@@ -74,29 +85,35 @@ header {
 .about-me-info__name {
   font-size: 3rem;
 }
-.about-me-info__name span {
+.about-me-info__name--big {
   font-family: "vcr";
   font-size: 6rem;
   text-transform: uppercase;
 }
-.about-me-info__name span span {
+.about-me-info__name--big span {
   color: #a8e00a;
 }
 .about-me-info__description {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-size: calc(16px + 0.5vw);
 }
 .about-me-info__button {
-  border: 2px solid green;
-  color: white;
-  font-size: 1.2rem;
+  border: 2px solid #a8e00a;
+  color: #a8e00a;
+  font-size: calc(16px + 0.8vw);
   background-color: #10101a;
   border-radius: 8px;
+}
+.about-me-info__button:hover {
+  color: white;
+  background-color: #a8e00a;
+}
+.about-me-info__button:active {
+  background-color: #82ad0b;
 }
 
 .skills-section {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   margin: 0 auto;
   min-width: 60vw;
@@ -109,14 +126,19 @@ header {
   flex-basis: 8rem;
   flex-grow: 1;
   padding: 1rem;
+  text-align: center;
   background-color: #10101a;
   border-radius: 0.5rem;
+}
+.skills-section div p {
+  margin: 0;
 }
 
 .projects-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 2rem;
 }
 .projects-section h3 {
   text-align: center;
@@ -133,7 +155,9 @@ header {
   grid-column: 1/3;
   padding: 3vw;
   align-items: center;
+  color: #7e9549;
   background-color: #d0ff94;
+  border-radius: 0 2vw 2vw 0;
 }
 .projects-section-microsoft img {
   width: 50%;
@@ -144,12 +168,24 @@ header {
 }
 .projects-section-microsoft__button {
   font-size: 3vw;
+  padding: 0 2vw;
+}
+.projects-section-microsoft__button:hover {
+  color: white;
+  background-color: #10101a;
+}
+.projects-section-microsoft__button:active {
+  background-color: #3d3d44;
 }
 .projects-section-nike {
+  color: #8596a6;
   background-color: #cbe5ff;
+  border-radius: 0 2vw 2vw 0;
 }
 .projects-section-oakley {
+  color: #bcd5ec;
   background-color: #4b56d2;
+  border-radius: 2vw 0 0 2vw;
 }
 .projects-section-nike, .projects-section-oakley {
   padding: 3vw;
@@ -163,6 +199,14 @@ header {
 }
 .projects-section-nike__button, .projects-section-oakley__button {
   font-size: 2vw;
+  padding: 0 2vw;
+}
+.projects-section-nike__button:hover, .projects-section-oakley__button:hover {
+  color: white;
+  background-color: #10101a;
+}
+.projects-section-nike__button:active, .projects-section-oakley__button:active {
+  background-color: #3d3d44;
 }
 
 .arrows-down {
@@ -188,7 +232,6 @@ header {
 }
 .contact-section-socialnetworks div {
   flex-grow: 1;
-  flex-basis: 25%;
   padding: 1rem 1rem;
   text-align: center;
 }
@@ -203,17 +246,41 @@ header {
 .contact-section-socialnetworks__github {
   background-color: gray;
 }
+.contact-section-socialnetworks__github button:hover {
+  background-color: rgb(84, 84, 84);
+}
+.contact-section-socialnetworks__github button:active {
+  background-color: rgb(57, 57, 57);
+}
 .contact-section-socialnetworks__linkedin {
   background-color: rgb(47, 81, 183);
+}
+.contact-section-socialnetworks__linkedin button:hover {
+  background-color: rgb(34, 58, 130);
+}
+.contact-section-socialnetworks__linkedin button:active {
+  background-color: rgb(24, 41, 94);
 }
 .contact-section-socialnetworks__instagram {
   background-color: rgb(255, 121, 143);
 }
+.contact-section-socialnetworks__instagram button:hover {
+  background-color: rgb(205, 96, 114);
+}
+.contact-section-socialnetworks__instagram button:active {
+  background-color: rgb(162, 75, 89);
+}
 .contact-section-socialnetworks__twitter {
   background-color: rgb(110, 172, 244);
 }
+.contact-section-socialnetworks__twitter button:hover {
+  background-color: rgb(82, 130, 186);
+}
+.contact-section-socialnetworks__twitter button:active {
+  background-color: rgb(66, 105, 150);
+}
 .contact-section-socialnetworks__email {
-  min-width: 100vw;
+  width: 100vw;
   background-color: #badf65;
 }
 .contact-section-socialnetworks__email a {
@@ -225,7 +292,6 @@ header {
   text-align: center;
 }
 .footer a {
-  padding-bottom: 3rem;
   color: white;
 }
 
@@ -234,10 +300,47 @@ header {
     max-width: 60vw;
   }
 }
+@media screen and (max-device-width: 1800px) {
+  .skills-section {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-device-width: 1150px) {
   .about-me {
     flex-direction: column-reverse;
     gap: 2.5rem;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .about-me-info__name {
+    font-size: 2.5rem;
+  }
+  .about-me-info__name span {
+    font-size: 3.5rem;
+  }
+  .about-me, .contact-section__text {
+    background-image: unset;
+  }
+  .projects-section {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .projects-section h3 {
+    font-size: 3rem;
+  }
+  .projects-section button {
+    font-size: 2rem;
+  }
+  .projects-section-microsoft {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .projects-section-microsoft img {
+    width: 100%;
+  }
+  .projects-section-nike, .projects-section-oakley {
+    grid-column: 1/3;
+    text-align: center;
   }
 }
 

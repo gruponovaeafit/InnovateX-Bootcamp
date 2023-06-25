@@ -20,19 +20,27 @@ body {
 }
 h2 {
     text-align: center;
+    font-size: 3.5rem;
+    font-family: variables.$main-font;
 }
-header {
-    margin-top: 2rem;
+button {
+    cursor: pointer;
 }
-
+button svg {
+    vertical-align: middle;
+}
+article svg {
+    padding: 0.5rem;
+}
 
 .container {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     max-width: 100vw;
-    padding: 0;
+    padding: 2rem 0 3rem 0;
 }
+
 .nav {
     display: flex;
     align-items: center;
@@ -44,17 +52,16 @@ header {
     border-radius: 1rem;
 
     a{
-        color: #a8e00a;
+        color: variables.$main-green-color;
     }
-    img:first-child {
+    &__logo {
         width: 200px;
     }
-    img:last-child {
+    &__menu-icon {
         width: 50px;
+        vertical-align: middle;
     }
 }
-
-
 
 .about-me {
     display: flex;
@@ -73,34 +80,42 @@ header {
         border-radius: 70px 0 70px 0;
     }
 }
+
 .about-me-info {
     max-width: 40rem;
     &__name {
         font-size: 3rem;
-        span {
+        &--big {
             font-family: variables.$main-font;
             font-size: 6rem;
             text-transform: uppercase;
             span {
-                color: #a8e00a;
+                color: variables.$main-green-color
             }
         }
     }
     &__description {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         font-size: calc(16px + 0.5vw);
     }
     &__button {
         border: 2px solid variables.$main-green-color;
-        color: white;
-        font-size: 1.2rem;
+        color: variables.$main-green-color;
+        font-size: calc(16px + 0.8vw);
         background-color: variables.$main-background-color;
         border-radius: 8px;
+        &:hover {
+            color: white;
+            background-color: variables.$main-green-color;
+        }
+        &:active {
+            background-color: #82ad0b;
+        }
     }
 }
+
 .skills-section {
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
     margin: 0 auto;
     min-width: 60vw;
@@ -113,14 +128,20 @@ header {
         flex-basis: 8rem;
         flex-grow: 1;
         padding: 1rem;
+        text-align: center;
         background-color: variables.$main-background-color;
         border-radius: 0.5rem;
+        p {
+            margin: 0;
+        }
     }
 }
+
 .projects-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 2rem;
 
     h3 {
         text-align: center;
@@ -137,7 +158,9 @@ header {
         grid-column: 1/3;
         padding: 3vw;
         align-items: center;
+        color: #7e9549;
         background-color: variables.$project1-section-color;
+        border-radius: 0 2vw 2vw 0;
 
         img {
             width: 50%;
@@ -148,13 +171,26 @@ header {
         }
         &__button {
             font-size: 3vw;
+            padding: 0 2vw;
+            &:hover {
+                color: white;
+                background-color: variables.$main-background-color;
+            }
+            &:active {
+                background-color: #3d3d44;
+            }
         }
+
     }
     &-nike {
+        color: #8596a6;
         background-color: variables.$project2-section-color;
+        border-radius: 0 2vw 2vw 0;
     }
     &-oakley {
+        color: #bcd5ec;
         background-color: variables.$project3-section-color;
+        border-radius: 2vw 0 0 2vw;
     }
     &-nike, &-oakley {
         padding: 3vw;
@@ -167,13 +203,23 @@ header {
         }
         &__button {
             font-size: 2vw;
+            padding: 0 2vw;
+            &:hover {
+                color: white;
+                background-color: variables.$main-background-color;
+            }
+            &:active {
+                background-color: #3d3d44;
+            }
         }
     }
 }
+
 .arrows-down {
     width: 150px;
     margin: 0 auto;
 }
+
 .contact-section {
     &__text {
         padding: 1rem 10vw;
@@ -194,7 +240,6 @@ header {
         
         div {
             flex-grow: 1;
-            flex-basis: 25%;
             padding: 1rem 1rem;
             text-align: center;
         }
@@ -208,18 +253,42 @@ header {
         }
         &__github {
             background-color: gray;
+            button:hover {
+                background-color: rgb(84, 84, 84);
+            }
+            button:active {
+                background-color: rgb(57, 57, 57);
+            }
         }
         &__linkedin {
             background-color: rgb(47, 81, 183);
+            button:hover {
+                background-color: rgb(34, 58, 130);
+            }
+            button:active {
+                background-color: rgb(24, 41, 94);
+            }
         }
         &__instagram {
             background-color: rgb(255, 121, 143);
+            button:hover {
+                background-color: rgb(205, 96, 114);
+            }
+            button:active {
+                background-color: rgb(162, 75, 89);
+            }
         }
         &__twitter {
             background-color: rgb(110, 172, 244);
+            button:hover {
+                background-color: rgb(82, 130, 186);
+            }
+            button:active {
+                background-color: rgb(66, 105, 150);
+            }
         }
         &__email {
-            min-width: 100vw;
+            width: 100vw ;
             background-color: #badf65;
             a {
                 color: white;
@@ -230,11 +299,9 @@ header {
     
 }
 
-
 .footer {
     text-align: center;
     a {
-        padding-bottom: 3rem;
         color: white;
     }
     
@@ -247,12 +314,51 @@ header {
         max-width: 60vw;
     }
 }
-
+@media screen and (max-device-width: 1800px) {
+    .skills-section {
+        flex-wrap: wrap;
+    }
+}
 @media screen and (max-device-width: 1150px) {
     .about-me {
         flex-direction: column-reverse;
         gap: 2.5rem;
     }
+}
+
+@media screen and (max-device-width: 600px) {
+    .about-me-info__name {
+        font-size: 2.5rem;
+        span {
+            font-size: 3.5rem;
+        }
+    }
+    .about-me, .contact-section__text {
+        background-image: unset;
+    }
+    .projects-section {
+        grid-template-rows: repeat(3, 1fr);
+        h3 {
+            font-size: 3rem;
+        }
+        button {
+            font-size: 2rem;
+        }
+        &-microsoft {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+        }
+        &-nike, &-oakley {
+            grid-column: 1/3;
+            text-align: center;
+        }
+    }
+    
+
 }
 
 
