@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript Fundamentals – Day 2</title>
+  </head>
+  <body>
+    <h1 class="first">InnovateX BootCamp 😎 – JavaScript</h1>
+    <section>
+      <p>Haz click en el botón para ver la nueva pestaña</p>
+      <button class="new-win" onclick="closeDocument()">
+        Haz click en este boton
+      </button>
+      <h1>Lista de peliculas favoritas:</h1>
+      <button onclick="gebc()">Change</button>
+      <ul class="list">
+        <li class="child">
+          <button class="mostrar-modal" id="one">Interestellar</button>
+        </li>
+        <li class="child">
+          <button class="mostrar-modal" id="two">Ratatouille</button>
+        </li>
+        <li class="child">
+          <button class="mostrar-modal" id="three">Cars</button>
+        </li>
+        <li class="child">
+          <button class="mostrar-modal" id="four">Avatar</button>
+        </li>
+      </ul>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Soy una ventana modal 😍</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+      <h2>Manejar ID's</h2>
+      <button onclick="clon()">Copy text!</button>
+      <p id="par">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

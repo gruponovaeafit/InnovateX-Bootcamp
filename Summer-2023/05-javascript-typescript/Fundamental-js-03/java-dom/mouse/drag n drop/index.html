@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #851eda, #c194f1);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+      .droptarget {
+        width: 100px; 
+        height: 100px;
+        padding: 100px;
+        border: 1px solid black;
+      }
+      #dragtarget1 {
+        color: #56ff3f;
+      }
+      #dragtarget2 {
+        color: #ffef3f;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>InnovateX BootCamp 😎 JavaScript</h1>
+
+    <!-- ===============================EJM 1================================= -->
+
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      <p ondragstart="dragStart(event)" ondrag="dragging()" draggable="true" id="dragtarget1">Drag me 11111</p>
+
+    </div>
+
+    <p id="demo1">SIOOOOOOOOOO</p>
+
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <!-- ===============================EJM 2================================= -->
+
+    <div class="droptarget" ondragover="allowDrop(event)">
+
+      <p draggable="true" id="dragtarget2">Drag me 22222</p>
+
+    </div>
+
+    <p id="demo2">SIUUUUUUUUU</p>
+
+    <div class="droptarget" ondragover="allowDrop(event)"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
