@@ -25,7 +25,6 @@ submit.addEventListener("click", function() {
     inputs.forEach((input) => {
         let i = input.value.trim();
         persona.push(i);
-        console.log(persona);
         if(i.length === 0) {
             estaVacio = true;
         }
