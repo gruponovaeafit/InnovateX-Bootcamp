@@ -19,6 +19,7 @@ function myFunction() {
 
 //si fuera con eventListener:
 //querySelector --> retorna el primer elemento que coincide con el querySelector
+
 /*
 const newwin = document.querySelector(".new-win"); //Tipo clase es .nombredeclase
 
@@ -27,10 +28,12 @@ newwin.addEventListener("click", myFunction); //no se pone los parentesis de la 
 //cargando otro documento HTML:
 
 function closeDocument() {
-  /*var newWindow = window.open(
-    "https://www.linkedin.com/in/sara-cortes1/",    // --> "_blank" indica que se abrirá una nueva ventana o pestaña. "_self" para abrir en la misma ventana, 
-    "_blank");  // "_parent" para abrir en el marco principal o un nombre personalizado para orientar una ventana específica.
-  */
+  /*
+  var newWindow = window.open(
+    "https://www.linkedin.com/in/sara-cortes1/", // --> "_blank" indica que se abrirá una nueva ventana o pestaña. "_self" para abrir en la misma ventana,
+    "_blank"
+  ); // "_parent" para abrir en el marco principal o un nombre personalizado para orientar una ventana específica.
+    */
   // Load another HTML file
   var newWindow = window.open();
   var xhr = new XMLHttpRequest();
