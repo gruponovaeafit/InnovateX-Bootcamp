@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: #562eaf;
+}
+
+.assessment{
+    font-size: 30px;
+    color: white;
+}
+

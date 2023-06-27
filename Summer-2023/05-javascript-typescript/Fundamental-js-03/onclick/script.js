@@ -20,9 +20,9 @@ function myFunction() {
 //si fuera con eventListener:
 //querySelector --> retorna el primer elemento que coincide con el querySelector
 /*
-const newwin = document.querySelector(".new-win");
+const newwin = document.querySelector(".new-win"); //Tipo clase es .nombredeclase
 
-newwin.addEventListener("click", myFunction);
+newwin.addEventListener("click", myFunction); //no se pone los parentesis de la funcion para solo referenciar la funcion y ya hace la accion cuando se hace el click
 */
 //cargando otro documento HTML:
 
