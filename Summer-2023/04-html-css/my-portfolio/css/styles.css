@@ -189,26 +189,32 @@ article svg {
   background-color: #4b56d2;
   border-radius: 2vw 0 0 2vw;
 }
-.projects-section-nike, .projects-section-oakley {
+.projects-section-nike,
+.projects-section-oakley {
   padding: 3vw;
 }
-.projects-section-nike img, .projects-section-oakley img {
+.projects-section-nike img,
+.projects-section-oakley img {
   width: 100%;
   border-radius: 3vw;
 }
-.projects-section-nike h3, .projects-section-oakley h3 {
+.projects-section-nike h3,
+.projects-section-oakley h3 {
   font-size: 5vw;
   padding: 2vw 0;
 }
-.projects-section-nike__button, .projects-section-oakley__button {
+.projects-section-nike__button,
+.projects-section-oakley__button {
   font-size: 2vw;
   padding: 0 2vw;
 }
-.projects-section-nike__button:hover, .projects-section-oakley__button:hover {
+.projects-section-nike__button:hover,
+.projects-section-oakley__button:hover {
   color: white;
   background-color: #10101a;
 }
-.projects-section-nike__button:active, .projects-section-oakley__button:active {
+.projects-section-nike__button:active,
+.projects-section-oakley__button:active {
   background-color: #3d3d44;
 }
 
@@ -321,7 +327,8 @@ article svg {
   .about-me-info__name span {
     font-size: 3.5rem;
   }
-  .about-me, .contact-section__text {
+  .about-me,
+  .contact-section__text {
     background-image: unset;
   }
   .projects-section {
@@ -341,10 +348,30 @@ article svg {
   .projects-section-microsoft img {
     width: 100%;
   }
-  .projects-section-nike, .projects-section-oakley {
+  .projects-section-nike,
+  .projects-section-oakley {
     grid-column: 1/3;
     text-align: center;
   }
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+.hidden {
+  display: none;
+}
+
+#modal {
+  color: #badf65;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
