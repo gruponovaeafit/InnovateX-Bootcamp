@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "vcr";
+  src: url(../assets/fonts/VCR.ttf);
+}
+/* Orden de propiedades:
+1. Position.
+2. Box model.
+3. Text.
+4. Visual properties: background, border-radius, etc.
+5. Others.
+*/
+body {
+  color: white;
+  font-family: Arial;
+  background-color: #10101a;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "vcr";
+}
+
+button {
+  cursor: pointer;
+}
+
+button svg {
+  vertical-align: middle;
+}
+
+article svg {
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 100vw;
+  padding: 2rem 0 3rem 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.nav a {
+  color: #a8e00a;
+}
+.nav__logo {
+  width: 200px;
+}
+.nav__menu-icon {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+  min-width: 85vw;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-image: url(../assets/img/rejillaFondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-me img {
+  width: 300px;
+  border-radius: 70px 0 70px 0;
+}
+
+.about-me-info {
+  max-width: 40rem;
+}
+.about-me-info__name {
+  font-size: 3rem;
+}
+.about-me-info__name--big {
+  font-family: "vcr";
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.about-me-info__name--big span {
+  color: #a8e00a;
+}
+.about-me-info__description {
+  padding: 1.5rem 0;
+  font-size: calc(16px + 0.5vw);
+}
+.about-me-info__button {
+  border: 2px solid #a8e00a;
+  color: #a8e00a;
+  font-size: calc(16px + 0.8vw);
+  background-color: #10101a;
+  border-radius: 8px;
+}
+.about-me-info__button:hover {
+  color: white;
+  background-color: #a8e00a;
+}
+.about-me-info__button:active {
+  background-color: #82ad0b;
+}
+
+.skills-section {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  min-width: 60vw;
+  max-width: 60vw;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #014047;
+}
+.skills-section div {
+  flex-basis: 8rem;
+  flex-grow: 1;
+  padding: 1rem;
+  text-align: center;
+  background-color: #10101a;
+  border-radius: 0.5rem;
+}
+.skills-section div p {
+  margin: 0;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+.projects-section h3 {
+  text-align: center;
+  font-family: "vcr";
+}
+.projects-section button {
+  border: 1px solid #10101a;
+  background-color: inherit;
+  border-radius: 0.5rem;
+}
+.projects-section-microsoft {
+  display: flex;
+  gap: 4vw;
+  grid-column: 1/3;
+  padding: 3vw;
+  align-items: center;
+  color: #7e9549;
+  background-color: #d0ff94;
+  border-radius: 0 2vw 2vw 0;
+}
+.projects-section-microsoft img {
+  width: 50%;
+  border-radius: 3vw;
+}
+.projects-section-microsoft h3 {
+  font-size: 8vw;
+  padding: 3vw 0;
+}
+.projects-section-microsoft__button {
+  font-size: 3vw;
+  padding: 0 2vw;
+}
+.projects-section-microsoft__button:hover {
+  color: white;
+  background-color: #10101a;
+}
+.projects-section-microsoft__button:active {
+  background-color: #3d3d44;
+}
+.projects-section-nike {
+  color: #8596a6;
+  background-color: #cbe5ff;
+  border-radius: 0 2vw 2vw 0;
+}
+.projects-section-oakley {
+  color: #bcd5ec;
+  background-color: #4b56d2;
+  border-radius: 2vw 0 0 2vw;
+}
+.projects-section-nike, .projects-section-oakley {
+  padding: 3vw;
+}
+.projects-section-nike img, .projects-section-oakley img {
+  width: 100%;
+  border-radius: 3vw;
+}
+.projects-section-nike h3, .projects-section-oakley h3 {
+  font-size: 5vw;
+  padding: 2vw 0;
+}
+.projects-section-nike__button, .projects-section-oakley__button {
+  font-size: 2vw;
+  padding: 0 2vw;
+}
+.projects-section-nike__button:hover, .projects-section-oakley__button:hover {
+  color: white;
+  background-color: #10101a;
+}
+.projects-section-nike__button:active, .projects-section-oakley__button:active {
+  background-color: #3d3d44;
+}
+
+.arrows-down {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.contact-section__text {
+  padding: 1rem 10vw;
+  font-size: 1.3rem;
+  background-image: url(../assets/img/rejillaFondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact-section__text p {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-section-socialnetworks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-section-socialnetworks div {
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+.contact-section-socialnetworks button {
+  border: 1px solid white;
+  width: 15rem;
+  color: white;
+  font-size: 2rem;
+  background-color: inherit;
+  border-radius: 0.4rem;
+}
+.contact-section-socialnetworks__github {
+  background-color: gray;
+}
+.contact-section-socialnetworks__github button:hover {
+  background-color: rgb(84, 84, 84);
+}
+.contact-section-socialnetworks__github button:active {
+  background-color: rgb(57, 57, 57);
+}
+.contact-section-socialnetworks__linkedin {
+  background-color: rgb(47, 81, 183);
+}
+.contact-section-socialnetworks__linkedin button:hover {
+  background-color: rgb(34, 58, 130);
+}
+.contact-section-socialnetworks__linkedin button:active {
+  background-color: rgb(24, 41, 94);
+}
+.contact-section-socialnetworks__instagram {
+  background-color: rgb(255, 121, 143);
+}
+.contact-section-socialnetworks__instagram button:hover {
+  background-color: rgb(205, 96, 114);
+}
+.contact-section-socialnetworks__instagram button:active {
+  background-color: rgb(162, 75, 89);
+}
+.contact-section-socialnetworks__twitter {
+  background-color: rgb(110, 172, 244);
+}
+.contact-section-socialnetworks__twitter button:hover {
+  background-color: rgb(82, 130, 186);
+}
+.contact-section-socialnetworks__twitter button:active {
+  background-color: rgb(66, 105, 150);
+}
+.contact-section-socialnetworks__email {
+  width: 100vw;
+  background-color: #badf65;
+}
+.contact-section-socialnetworks__email a {
+  color: white;
+  font-size: 6vw;
+}
+
+.footer {
+  text-align: center;
+}
+.footer a {
+  color: white;
+}
+
+@media screen and (min-device-width: 2000px) {
+  .about-me-info {
+    max-width: 60vw;
+  }
+}
+@media screen and (max-device-width: 1800px) {
+  .skills-section {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-device-width: 1150px) {
+  .about-me {
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .about-me-info__name {
+    font-size: 2.5rem;
+  }
+  .about-me-info__name span {
+    font-size: 3.5rem;
+  }
+  .about-me, .contact-section__text {
+    background-image: unset;
+  }
+  .projects-section {
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+  }
+  .projects-section h3 {
+    font-size: 3rem;
+  }
+  .projects-section button {
+    font-size: 2rem;
+  }
+  .projects-section-microsoft {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .projects-section-microsoft img {
+    width: 100%;
+  }
+  .projects-section-nike, .projects-section-oakley {
+    grid-column: 1/3;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+* {
+    background-color: #155fe6;
+}
+
+.forms-fields, .submit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#submit {
+    margin-top: 5%;
+    width: 40%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #562eaf;
+    color: #f0f7ff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#name, #password {
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: #03989e;
+    color: #f0f7ff;
+}

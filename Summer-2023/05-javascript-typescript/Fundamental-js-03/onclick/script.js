@@ -19,11 +19,11 @@ function myFunction() {
 
 //si fuera con eventListener:
 //querySelector --> retorna el primer elemento que coincide con el querySelector
-/*
+
 const newwin = document.querySelector(".new-win");
 
 newwin.addEventListener("click", myFunction);
-*/
+ 
 //cargando otro documento HTML:
 
 function closeDocument() {
